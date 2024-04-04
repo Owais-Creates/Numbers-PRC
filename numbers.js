@@ -38,3 +38,26 @@ const largestNumber = (arr) => {
 console.log(
     largestNumber([2, 3, 4, 56, 7, 100, 5]) //OUTPUT --> largest number --> 100
 );
+
+
+// ---------------------------------------------------------------------------------------------------
+
+// Q2 -  Write a function factorial which takes a number and prints the factorial of it. 
+
+const factorial = (num) => {
+
+    let fac = 1;
+    const originalNum = num;
+
+    while (num > 0) {
+        fac = fac * num;
+        num--
+    }
+    return `Factorial of ${originalNum} is ${fac}`
+}
+
+console.log(
+    factorial(8)
+);
+
+// OUTPUT - Factorial of 8 is 40320
