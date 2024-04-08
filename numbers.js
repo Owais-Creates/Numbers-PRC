@@ -16,7 +16,7 @@ const fibonacci = (n) => {
 }
 
 fibonacci(9) // OUTPUT - 0 1 1 2 3 5 8 13 21
- 
+
 // ---------------------------------------------------------------------------------------------------
 
 // Q2 -  Write a function largestNumber which takes aan array of numbers and returns the  largest number in that array. 
@@ -42,7 +42,7 @@ console.log(
 
 // ---------------------------------------------------------------------------------------------------
 
-// Q2 -  Write a function factorial which takes a number and prints the factorial of it. 
+// Q3 -  Write a function factorial which takes a number and prints the factorial of it. 
 
 const factorial = (num) => {
 
@@ -61,3 +61,27 @@ console.log(
 );
 
 // OUTPUT - Factorial of 8 is 40320
+
+//-------------------------------------------------------------------------------------------------------------------
+
+// Write a function which takes an a number and returns the sum of the number.
+
+const sumOFNumber = (num) => {
+
+    let sum = 0;
+    let originalNum = num;
+
+    while (num > 0) {
+
+        sum += num % 10;
+        num = Math.floor(num / 10);
+
+    }
+
+    return `The sum of (${originalNum}) --> "${sum}"`
+
+}
+
+console.log(
+    sumOFNumber(999999933) //OUTPUT - The sum of (999999933) --> "69"
+);
